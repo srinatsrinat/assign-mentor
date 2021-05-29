@@ -1,0 +1,65 @@
+endpoints :
+
+/create-mentor : to create mentor
+
+sample json:
+
+{
+    "mentor_name":"adf",
+    "mentor_id": "",
+    "students": [{
+        "studentName" : "asdf",
+        "studentID": 2
+    }]
+}
+ or
+{
+    "mentor_name":"",
+    "mentor_id": "",
+    "students": []
+}
+
+
+/show-mentor : show mentor records
+
+/create-student : create student records
+
+sample json:
+
+{
+    "student_name":"",
+    "student_id": "",
+     "mentorAssigned":"" 
+}
+
+
+/show-student : show student records 
+
+
+/assign-student-mentor : assign students to mentors and vice versa, update student and mentor records correspondingly.
+
+sample json:
+
+{   
+    "mentorName": "asdfsd",
+    "mentorID": xx,
+    "student_list":[
+        {
+            "studentName": "asdfasdfasdf",
+            "studentID" : xx
+        }
+    ]
+
+}
+
+
+show-mentor/all-students : show all students assigned to a particular mentor
+
+sample json:
+
+{
+    "mentor_name": "asdfasdf",
+    "mentorID" : xx
+}
+
+show-student/without-mentor : show students without mentor
